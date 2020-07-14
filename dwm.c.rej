@@ -1,0 +1,53 @@
+--- dwm/dwm.c.orig
++++ dwm/dwm.c
+@@ -274,6 +280,7 @@ static Display *dpy;
+ static Drw *drw;
+ static Monitor *mons, *selmon;
+ static Window root;
++static Clientlist *cl;
+ 
+ /* configuration, allows nested code to access above variables */
+ #include "config.h"
+@@ -572,7 +612,7 @@ clientmessage(XEvent *e)
+ 			setfullscreen(c, (cme->data.l[0] == 1 /* _NET_WM_STATE_ADD    */
+ 			              || (cme->data.l[0] == 2 /* _NET_WM_STATE_TOGGLE */ && !c->isfullscreen)));
+ 	} else if (cme->message_type == netatom[NetActiveWindow]) {
+-		if (!ISVISIBLE(c)) {
++		if (!ISVISIBLE(c, c->mon)) {
+ 			c->mon->seltags ^= 1;
+ 			c->mon->tagset[c->mon->seltags] = c->tags;
+ 		}
+@@ -856,8 +917,8 @@ expose(XEvent *e)
+ void
+ focus(Client *c)
+ {
+-	if (!c || !ISVISIBLE(c))
+-		for (c = selmon->stack; c && !ISVISIBLE(c); c = c->snext);
++	if (!c || !ISVISIBLE(c, selmon))
++		for (c = selmon->cl->stack; c && !ISVISIBLE(c, selmon); c = c->snext);
+ 	/* was if (selmon->sel) */
+ 	if (selmon->sel && selmon->sel != c)
+ 		unfocus(selmon->sel, 0);
+@@ -1971,17 +2059,13 @@ updategeom(void)
+ 			/* less monitors available nn < n */
+ 			for (i = nn; i < n; i++) {
+ 				for (m = mons; m && m->next; m = m->next);
+-				while (m->clients) {
+-					dirty = 1;
+-					c = m->clients;
+-					m->clients = c->next;
+-					detachstack(c);
+-					c->mon = mons;
+-					attach(c);
+-					attachstack(c);
+-				}
+ 				if (m == selmon)
+ 					selmon = mons;
++				for (c = m->cl->clients; c; c = c->next) {
++					dirty = True;
++					if (c->mon == m)
++						c->mon = selmon;
++				}
+ 				cleanupmon(m);
+ 			}
+ 		}

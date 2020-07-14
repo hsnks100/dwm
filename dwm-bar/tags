@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+Acknowledgements	README.md	/^## Acknowledgements$/;"	s
+Contributing	README.md	/^## Contributing$/;"	s
+Contributing to dwm-bar	CONTRIBUTING.md	/^# Contributing to dwm-bar$/;"	c
+Customizing	README.md	/^## Customizing$/;"	s
+Editing README.md	CONTRIBUTING.md	/^## Editing README.md$/;"	s
+Editing dwm_bar.sh	CONTRIBUTING.md	/^## Editing dwm_bar.sh$/;"	s
+Installation	README.md	/^## Installation$/;"	s
+Making/editing a plugin	CONTRIBUTING.md	/^## Making\/editing a plugin$/;"	s
+Quick Start	README.md	/^## Quick Start$/;"	s
+Recommendations	README.md	/^## Recommendations$/;"	s
+Table of Contents	README.md	/^## Table of Contents$/;"	s
+dwm-bar	README.md	/^# dwm-bar$/;"	c
+dwm_alarm	README.md	/^### dwm_alarm$/;"	S
+dwm_alarm	bar-functions/dwm_alarm.sh	/^dwm_alarm () {$/;"	f
+dwm_alsa	README.md	/^### dwm_alsa$/;"	S
+dwm_alsa	bar-functions/dwm_alsa.sh	/^dwm_alsa () {$/;"	f
+dwm_backlight	README.md	/^### dwm_backlight$/;"	S
+dwm_backlight	bar-functions/dwm_backlight.sh	/^dwm_backlight () {$/;"	f
+dwm_battery	README.md	/^### dwm_battery$/;"	S
+dwm_battery	bar-functions/dwm_battery.sh	/^dwm_battery () {$/;"	f
+dwm_ccurse	README.md	/^### dwm_ccurse$/;"	S
+dwm_ccurse	bar-functions/dwm_ccurse.sh	/^dwm_ccurse () {$/;"	f
+dwm_cmus	README.md	/^### dwm_cmus$/;"	S
+dwm_cmus	bar-functions/dwm_cmus.sh	/^dwm_cmus () {$/;"	f
+dwm_connman	README.md	/^### dwm_connman$/;"	S
+dwm_connman	bar-functions/dwm_connman.sh	/^dwm_connman () {$/;"	f
+dwm_countdown	README.md	/^### dwm_countdown$/;"	S
+dwm_countdown	bar-functions/dwm_countdown.sh	/^dwm_countdown () {$/;"	f
+dwm_date	README.md	/^### dwm_date$/;"	S
+dwm_date	bar-functions/dwm_date.sh	/^dwm_date () {$/;"	f
+dwm_keyboard	README.md	/^### dwm_keyboard$/;"	S
+dwm_keyboard	bar-functions/dwm_keyboard.sh	/^dwm_keyboard () {$/;"	f
+dwm_loadavg	README.md	/^### dwm_loadavg$/;"	S
+dwm_loadavg	bar-functions/dwm_loadavg.sh	/^dwm_loadavg () {$/;"	f
+dwm_mail	README.md	/^### dwm_mail$/;"	S
+dwm_mail	bar-functions/dwm_mail.sh	/^dwm_mail () {$/;"	f
+dwm_mpc	README.md	/^### dwm_mpc$/;"	S
+dwm_mpc	bar-functions/dwm_mpc.sh	/^dwm_mpc () {$/;"	f
+dwm_networkmanager	README.md	/^### dwm_networkmanager$/;"	S
+dwm_networkmanager	bar-functions/dwm_networkmanager.sh	/^dwm_networkmanager () {$/;"	f
+dwm_pulse	README.md	/^### dwm_pulse$/;"	S
+dwm_pulse	bar-functions/dwm_pulse.sh	/^dwm_pulse () {$/;"	f
+dwm_resources	README.md	/^### dwm_resources$/;"	S
+dwm_resources	bar-functions/dwm_resources.sh	/^dwm_resources () {$/;"	f
+dwm_spotify	README.md	/^### dwm_spotify$/;"	S
+dwm_spotify	bar-functions/dwm_spotify.sh	/^dwm_spotify () {$/;"	f
+dwm_transmission	README.md	/^### dwm_transmission$/;"	S
+dwm_transmission	bar-functions/dwm_transmission.sh	/^dwm_transmission () {$/;"	f
+dwm_vpn	README.md	/^### dwm_vpn$/;"	S
+dwm_vpn	bar-functions/dwm_vpn.sh	/^dwm_vpn () {$/;"	f
+dwm_weather	README.md	/^### dwm_weather$/;"	S
+dwm_weather	bar-functions/dwm_weather.sh	/^dwm_weather() {$/;"	f
+dwm_wpa	README.md	/^### dwm_wpa$/;"	S
+dwm_wpa	bar-functions/dwm_wpa.sh	/^dwm_wpa() {$/;"	f
